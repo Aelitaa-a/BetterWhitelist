@@ -1,0 +1,8 @@
+name: BetterWhitelist
+version: '${project.version}'
+main: fr.aelita.betterwhitelist.Main
+api-version: '1.20'
+
+commands:
+  whitelist:
+    aliases: [wl]
