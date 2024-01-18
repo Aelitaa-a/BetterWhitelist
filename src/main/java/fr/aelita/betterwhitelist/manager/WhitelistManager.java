@@ -22,10 +22,10 @@ public class WhitelistManager {
     }
 
     public boolean containsPlayer(String name){
-        if (this.activate) {
-            return this.whitelistedPlayers.contains(name) ;
+        for (String playerName : this.whitelistedPlayers) {
+            if (playerName.equalsIgnoreCase(name)) return true;
         }
-        return true;
+        return false;
     }
 
     public ArrayList<String> getWhitelistedPlayers() {
